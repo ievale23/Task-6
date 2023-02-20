@@ -38,11 +38,15 @@ getUserAverageAge(users);
 
 console.log("-------Vartotojų vardų masyvas-------");
 
+let namesArray = [];
+
 function getUsersNames(users) {
   for (let i = 0; i < users.length; i++) {
     let allNames = users[i].name;
     console.log(allNames);
+    namesArray.push(allNames);
   }
+  console.log(namesArray);
 }
 
 getUsersNames(users);
