@@ -19,19 +19,30 @@ const users = [
   { id: "8", name: "Simon Peterson", age: 30 },
   { id: "9", name: "Daniel Cane", age: 51 },
 ];
+
+console.log("-------Vartotojų amžiaus vidurkis-------");
 let agesSum = 0;
 
 function getUserAverageAge(users) {
   for (let i = 0; i < users.length; i++) {
     let allAges = users[i].age;
-    console.log(allAges);
+
     agesSum += allAges;
   }
-
-  console.log(agesSum);
 
   let ageAverage = agesSum / users.length;
   console.log(ageAverage);
 }
 
 getUserAverageAge(users);
+
+console.log("-------Vartotojų vardų masyvas-------");
+
+function getUsersNames(users) {
+  for (let i = 0; i < users.length; i++) {
+    let allNames = users[i].name;
+    console.log(allNames);
+  }
+}
+
+getUsersNames(users);
